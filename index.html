@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple practice">    
+    <meta name="keywords" content="travel">
+    <meta name="author" content="Jacy Chu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jacy In Spain</title>
+    <!-- Bootstrap Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap JS FILES -->
+    <script src="js/jquery.js"></script>
+    <script src="js/propper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <script>
+    /* Smooth scroll */
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1000, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    /* Back to top */
+    $(function() {
+        $('#gotop').click(function(){
+            $('html,body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
+        $(window).scroll(function() {
+            if ( $(this).scrollTop() > 2000){
+                $('#gotop').fadeIn();
+            } else {
+                $('#gotop').fadeOut();
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+
+<!--head-->
+<div class="head1">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div style="margin-right: 20px;" class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <nav role="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#about">關於我</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#info">學校資訊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#prepare">行前準備</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white; font-size: 18px;" href="#days">生活記錄</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+    </nav>
+    <div class="head2">
+    <p style="white; color: #036;"><strong>HELLO</strong></p>
+    <img class="jacy" src="images/jacy.png">
+    <p class="jacy2">西班牙納瓦拉大學交換生 | 2017秋季交換一學期</p>
+    </div>
+</div>
+
+<div id="about">
+    <h6 style="color: #036; padding-top: 80px;">- 關於我 -</h6><br>
+    <h5 style="color: dimgray; padding-bottom: 80px;">是一個不想要一直待在臺北的女生</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xs-12">
+            <img style="padding-bottom: 20px;" src="images/me.png">
+            <h6 style="color: #036; padding-bottom: 20px;">Jacy Chu</h6>
+        </div>
+        <div class="col-lg-8 col-xs-12">
+            <div style="padding: 0 15px 90px 15px; text-align: left; font-size: 17px;"><p>Hello! I am Jacy Chu.<br>
+            出生在臺北，求學生涯也都待這個交通發達的小盆地。</p>
+
+            <p>大學就讀國立政治大學<br>
+            大學一年期，修習學校開設的西文課兩個學期<br>
+            除了學習西班牙語，也聽聞這個遙遠國度的故事<br>
+            因這樣的契機，加上想離開臺北獨立生活<br>
+            從大二開始準備申請交換資料，透過政大簽約的姐妹校推薦<br>
+            在大四上學期，以交換學生身份赴西班牙納瓦拉大學交流</p>
+
+            <p>學校位於西班牙北部的潘普洛納城市<br>
+            算是比較富裕也很安全的城鎮<br>
+            在校園中說英文99%沒有溝通問題<br>
+            但當地人(學校外)會說英文的比例偏低<br>
+            秋季的學期長度較短，但課程非常精實<br>
+            這段海外留學經歷，除了開闊我的視野，也留下寶貴的回憶。</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--middle-->
+<div class="middle1">
+    <div class="middle2">
+    <p style="text-shadow: 4px 3px 10px #282726;">“Life always begins with one step outside of your comfort zone.” ― Shannon L. Alder</p>
+    </div>
+</div>
+
+<div id="info">
+    <h6 style="color: #036; padding-top: 80px;">- 學校資訊 -</h6><br>
+    <h5 style="color: dimgray; padding-bottom: 80px;">納瓦拉大學是西班牙最好的私立大學</h5>
+    <div class="container" style="text-align: left;">
+      <div class="row">
+        <div class="col-md-9">
+            <h4 style="color: #036; padding-bottom: 5px;">學校介紹</h4>
+            <div class="intro">
+                <p>西班牙納瓦拉大學是全國最好的私立大學，創立於1952年。共有四個校區，主要校區位於潘普洛納，其他校區包括聖賽巴斯提安工學院，還有高級商學院IESE總部，位於巴賽隆納及馬德里。在潘普洛納的主校區，地理環境很好且校園環境很清幽。</p>
+                <p>由於學校是隸屬於天主教的私立大學，故校風較為保守。學校教授課程語言主要是西班牙語。部分工商管理、法律與工程學有提供英語授課。西班牙納瓦拉大學為留學生提供多種住宿的選擇，像是校園宿舍、合作租屋仲介、寄宿家庭等方式。</p>
+            </div>
+            <h4 style="color: #036; padding-bottom: 5px;">學校排名</h4>
+            <div class="intro">
+                <p>2012《世界報》評為西班牙頂級私立大學<br>
+                2012《紐約時報》大學就業能力排名第41名<br>
+                2012《金融時報》IESE開放式執行教育課程評為世界第一<br>
+                2009 馬德里康普滕斯大學工業與金融分析研究所評為頂級私立大學</p>
+            </div>
+            <h4 style="color: #036; padding-bottom: 5px;">課程資訊</h4>
+            <div class="intro" style="padding-bottom: 40px">
+            <p>我全部選了四門課，其中兩門是商學院的課，兩門是IESE開的西文課。一門課每週有兩個時段，一個時段兩個小時，當地學生是以ECT學分數做學費計算。</p>
+            <ol>
+                <li>國際貿易</li><p>課程內容分兩部分。第一部分是探討各國貿易的進出口，第二部分是兩個經典的經濟模型，這些經濟模型可以於網路上搜尋到很多相關資料作輔助學習。</p>
+                <li>專案管理</li><p>此課程會於課堂介紹許多專案管理的相關管理表格，像是專案管理中最著名的WBS，還有許多管理架構。課堂時間，用教授提供的例子嘗試建立起架構，除 了上理論之外也直接與實務結合。</p>
+                <li>西文A2</li><p>來交換之前，有上過政大外交系開的西文課，具備一些西文基礎，所以來這邊上 A2。課堂中會要求學生練習寫作，使用上課教過的句子，結合交換的心得或是自己的想法。</p>
+                <li>西文發音與對話(A2)</li><p>課程著重在發音理論，學習西班牙語聲音學的細節。期中有辦一個宣傳活動，所有程級(A1~B2)發音課的學生會一起完成指定的項目。期末則是進錄音室，錄製與同學共同編寫的對話。</p>
+            </ol>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <img style="width: 100%; margin-bottom: 100px;" src="images/college.png">
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div style="background: white;" id="prepare">
+    <h6 style="color: #036; padding-top: 80px;">- 行前準備 -</h6><br>
+    <h5 style="color: dimgray; padding-bottom: 40px;">離家一萬公里的準備</h5>
+    <div class="container" style="text-align: left;">
+      <div class="row" style="padding-bottom: 30px;">
+        <img style="padding-bottom: 20px; width: 50%; height: 50%; margin: auto;" src="images/map.png">
+        <div class="col-md-7 col-sm-12">
+            <h4 style="color: #036; padding-bottom: 5px;">辦理簽證</h4>
+            <div class="prepare">
+            <p>到「西班牙商務辦事處」辦理，需要的文件於網站內有詳細說明。(海外保險、存款證明...等等)辦簽證的效率比想像中快，約兩週就收到通知去領取簽證。保險起見，出發前一兩個月辦理比較放心，要特別注意的是西班牙商務辦事處只有週一到週四的上午時間有開放。</p>
+            </div>
+            <h4 style="color: #036; padding-bottom: 5px;">機票＆火車</h4>
+            <div class="prepare">
+            <p>從台灣飛西班牙沒有直航的班機。我搭的是荷蘭航空KLM，在荷蘭轉機飛馬德里。從台灣飛到荷蘭約12小時，從荷蘭飛到馬德里約3小時。出馬德里機場之後，搭機場接駁車到T4搭地鐵到Atocha站，轉Renfe火車到潘普洛納，現場購票約66歐，若網路購票可以省不少錢。除了火車之外，也可以選擇搭巴士，便宜許多但相對搭車的時間比較久。</p>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <h4 style="color: #036; padding-bottom: 5px;">住宿</h4>
+            <div class="prepare">
+            <p>學校有學校宿舍，包含打掃及三餐，但價格落在750歐左右。另外，學校有提供合作租屋的網站與聯繫方式，我是藉由其中一間租屋公司(unicasa)找到住宿的。學期九月初到十二月中，長度約四個月。Welcoming day會在八月底舉辦，unicasa可以從八月底開始住，但需依照比例繳交多住的天數其相對的租金。租金平均一個月350歐左右(包含水、電、網路，不包含打掃)，此外，還需繳交約100歐的管理費(不會退還)。在潘普洛納，這樣的金額偏貴，若想自己在外面租屋，很少房仲願意只租四個月。unicasa的房子大多都在學校附近，大約走路5~10分鐘可以到學校，不需要額外的交通費，算是還不錯的部分。</p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="days">
+    <h6 style="color: #036; padding-top: 80px;">- 生活記錄 -</h6><br>
+    <h5 style="color: dimgray; padding-bottom: 40px;">曾在潘普洛納留下的蹤跡</h5>
+
+    <div class="container">
+        <div class="row2">
+            <div class="cards">
+
+                <div class="card-text" style="background-image: url(images/life1.jpg)">
+                    <h5>文化介紹</h5>
+                    <a href="life1.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+                <div class="card-text" style="background-image: url(images/life2.jpg)">
+                    <h5>交通假期</h5>
+                    <a href="life2.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+                <div class="card-text" style="background-image: url(images/life3.jpg)">
+                    <h5>飲食選項</h5>
+                    <a href="life3.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+                <div class="card-text" style="background-image: url(images/life4.jpg)">
+                    <h5>學校資源</h5>
+                    <a href="life4.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+                <div class="card-text" style="background-image: url(images/life5.jpg)">
+                    <h5>注意事項</h5>
+                    <a href="life5.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+                <div class="card-text" style="background-image: url(images/life6.jpg)">
+                    <h5>觀賞影片</h5>
+                    <a href="life6.html"><button type="button" class="btn btn-outline-light btn-md">Click to check more!</button></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+<div style="background-color: #c7d4e0;">
+    <div class="container" style="color: #2c3a47;">
+        <div style="text-align: left;">
+            <h5 style="color: #036; padding-top: 50px;">- 相關參考資訊 -</h5>
+            <div>
+                <img class="uni" src="images/uni.png">
+            </div>
+            <div style="padding-top: 30px;">
+            <h6>政治大學出國交換網站</h6>
+            <a class="reflink" href="http://incoming.iep.nccu.edu.tw/news">http://incoming.iep.nccu.edu.tw</a>
+            </div>
+            <div style="padding: 20px 0 50px 0;">
+            <h6>西班牙納瓦拉大學網站</h6>
+            <a class="reflink" href="https://www.unav.edu/en/home">https://www.unav.edu</a>
+            </div>
+        </div>
+    </div>    
+    <div class="footer-copyright text-center py-3" style="background: #036; color: white; font-size: 12px;">© 2019 Jacy Chu All Rights Reserved
+    </div>
+</footer>
+
+<!-- Back to top button -->
+<a href="#" id="gotop" style="font-size: 15px;">TOP</a>
+
+</body>
+</html>
